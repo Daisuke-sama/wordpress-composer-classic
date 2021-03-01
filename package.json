@@ -1,0 +1,38 @@
+{
+  "name": "paul-iroyalpr_wordpress",
+  "description": "The frontend assets for WordPress project in the classic structure. This is just fishbone for separation the builder.",
+  "license": "MIT",
+  "engines": {
+    "node": "12.*",
+    "yarn": "1.*"
+  },
+  "scripts": {
+    "build": "npx encore production --progress",
+    "build-dev": "npx encore dev",
+    "watch": "npx encore dev --watch",
+    "server": "npx encore dev-server"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.8.4",
+    "@symfony/webpack-encore": "^0.28.2",
+    "autoprefixer": "^9.7.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.6.4",
+    "jquery": "^1.12.4",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "regenerator-runtime": "^0.13.3",
+    "resolve-url-loader": "^3.1.1",
+    "sass-loader": "^7.0.1",
+    "underscore": "^1.8.3",
+    "webpack-notifier": "^1.8.0"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.8.4",
+    "compass-mixins-fixed": "^1.0.1",
+    "url-loader": "2.0.1"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

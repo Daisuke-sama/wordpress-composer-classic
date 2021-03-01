@@ -1,0 +1,21 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+ErrorDocument 404 /dashboard
+
+</IfModule>
+# END WordPress
+
+php_flag  log_errors on
+php_value error_log  /path/to/logs/wordpress-composer-classic-errors.log
+<Files errors.log>
+ Order allow,deny
+ Deny from all
+ Satisfy All
+</Files>

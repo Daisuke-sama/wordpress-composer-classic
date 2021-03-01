@@ -1,0 +1,3 @@
+path: web/
+server:
+  docroot: ./web
